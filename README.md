@@ -9,9 +9,9 @@ compatibility Matrix:
 
 ---
 
-SonarQube的繁體中文套件
+SonarQube 繁體中文套件 (Traditional Chinese language pack)
 
-相容列表如下：
+相容列表如下(Compatibility List)：
 
 **SonarQube** |**8.0**|       |       |       |       |       |       |       |       |       |
 --------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
