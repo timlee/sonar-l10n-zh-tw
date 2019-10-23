@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.codehaus.sonar-plugins</groupId>
+    <artifactId>parent</artifactId>
+    <version>18</version>
+  </parent>
+
+  <groupId>org.sonarqube.l10n.zh_tw</groupId>
+  <artifactId>sonar-l10n-zh-tw-plugin</artifactId>
+  <packaging>sonar-plugin</packaging>
+  <version>8.0-SNAPSHOT</version>
+
+  <name>L10n :: Traditional Chinese Pack</name>
+  <url>https://github.com/SonarQubeCommunity/sonar-l10n-zh-tw</url>
+  <inceptionYear>2019</inceptionYear>
+  <description>Language Pack for Traditional Chinese</description>
+
+  <organization>
+    <name>CodeHawk</name>
+    <url>http://www.codehawk.org</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>GNU LGPL 3</name>
+      <url>http://www.gnu.org/licenses/lgpl.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:https://github.com/SonarQubeCommunity/sonar-l10n-zh-tw.git</connection>
+    <developerConnection>scm:git:https://github.com/SonarQubeCommunity/sonar-l10n-zh-tw.git</developerConnection>
+    <url>https://github.com/SonarQubeCommunity/sonar-l10n-zh-tw</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/SonarQubeCommunity/sonar-l10n-zh-tw/issues</url>
+  </issueManagement>
+
+  <properties>
+    <sonar.pluginClass>org.sonar.plugins.l10n.TraditionalChinesePackPlugin</sonar.pluginClass>
+    <sonar.version>8.0</sonar.version>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.sonarsource.sonarqube</groupId>
+      <artifactId>sonar-plugin-api</artifactId>
+      <version>${sonar.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.sonarsource.sonarqube</groupId>
+      <artifactId>sonar-testing-harness</artifactId>
+      <version>${sonar.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.sonarsource.sonarqube</groupId>
+      <artifactId>sonar-core</artifactId>
+      <version>${sonar.version}</version>
+      <scope>test</scope>
+    </dependency>
+	<!-- https://mvnrepository.com/artifact/org.codehaus.sonar/sonar-plugin-api -->
+	<dependency>
+	    <groupId>org.codehaus.sonar</groupId>
+	    <artifactId>sonar-plugin-api</artifactId>
+	    <version>4.3</version>
+	    <scope>provided</scope>
+	</dependency>
+	<dependency>
+	  <groupId>junit</groupId>     
+	  <artifactId>junit-dep</artifactId>
+	  <version>4.8.2</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/animal-sniffer-maven-plugin -->
+	<dependency>
+	    <groupId>org.codehaus.mojo</groupId>
+	    <artifactId>animal-sniffer-maven-plugin</artifactId>
+	    <version>1.18</version>
+	</dependency>
+
+	
+  </dependencies>
+
+  <developers>
+    <developer>
+      <id>wtlee</id>
+      <name>wentinlee</name>
+      <organization>CodeHawk</organization>
+      <organizationUrl>http://www.codehawk.org</organizationUrl>
+    </developer>
+  </developers>
+
+  <build>
+  <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
+        <artifactId>sonar-packaging-maven-plugin</artifactId>
+        <version>1.19</version>
+        <extensions>true</extensions>
+        <configuration>
+          <basePlugin>l10nen</basePlugin>
+          <pluginName>Traditional Chinese Pack</pluginName>
+          <pluginDescription>Language pack for Traditional Chinese</pluginDescription>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+		  <groupId>org.codehaus.mojo</groupId>
+		  <artifactId>animal-sniffer-maven-plugin</artifactId>
+		  <version>1.18</version>
+		  <executions>
+			<execution>
+			  <phase>test</phase>
+			  <goals>
+				<goal>check</goal>
+			  </goals>
+			</execution>
+		  </executions>
+		  <configuration>
+			<signature>
+			  <groupId>org.codehaus.mojo.signature</groupId>
+			  <artifactId>java18</artifactId>
+			  <version>1.0</version>
+			</signature>
+		  </configuration>
+		</plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>native2ascii-maven-plugin</artifactId>
+        <version>1.0-beta-1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>native2ascii</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+      <plugin>
+      	<groupId>org.eclipse.m2e</groupId>
+      	<artifactId>lifecycle-mapping</artifactId>
+      	<version>1.0.0</version>
+      	<configuration>
+      		<lifecycleMappingMetadata>
+      			<pluginExecutions>
+      				<pluginExecution>
+      					<pluginExecutionFilter>
+      						<groupId>org.codehaus.sonar</groupId>
+      						<artifactId>
+      							sonar-packaging-maven-plugin
+      						</artifactId>
+      						<versionRange>[1.5,)</versionRange>
+      						<goals>
+      							<goal>check-dependencies</goal>
+      						</goals>
+      					</pluginExecutionFilter>
+      					<action>
+      						<ignore></ignore>
+      					</action>
+      				</pluginExecution>
+      			</pluginExecutions>
+      		</lifecycleMappingMetadata>
+      	</configuration>
+      </plugin>
+    </plugins>
+    </pluginManagement>
+  </build>
+
+<!--
+  <repositories>
+    <repository>
+	  <id>sonar</id>
+	  <url>https://repox.sonarsource.com/sonarsource</url>
+	</repository>
+  </repositories>
+-->
+
+  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <name>Nexus Release Repository</name>
+      <url>file:./target/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>Nexus Snapshot Repository</name>
+      <url>file:./target/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>
