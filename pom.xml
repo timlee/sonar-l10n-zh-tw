@@ -171,6 +171,23 @@
       						<ignore></ignore>
       					</action>
       				</pluginExecution>
+      				<pluginExecution>
+      					<pluginExecutionFilter>
+      						<groupId>
+      							com.mycila.maven-license-plugin
+      						</groupId>
+      						<artifactId>
+      							maven-license-plugin
+      						</artifactId>
+      						<versionRange>[1.9.0,)</versionRange>
+      						<goals>
+      							<goal>check</goal>
+      						</goals>
+      					</pluginExecutionFilter>
+      					<action>
+      						<ignore></ignore>
+      					</action>
+      				</pluginExecution>
       			</pluginExecutions>
       		</lifecycleMappingMetadata>
       	</configuration>
@@ -178,15 +195,6 @@
     </plugins>
     </pluginManagement>
   </build>
-
-<!--
-  <repositories>
-    <repository>
-	  <id>sonar</id>
-	  <url>https://repox.sonarsource.com/sonarsource</url>
-	</repository>
-  </repositories>
--->
 
   <distributionManagement>
     <repository>
