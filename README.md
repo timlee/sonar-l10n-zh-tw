@@ -3,13 +3,13 @@ The Traditional Chinese translation pack for SonarQube
 
 Author: Tim Lee <wentin.lee@gmail.com>
 
-Latest version: (https://github.com/SonarQubeCommunity/sonar-l10n-zh-tw/releases/latest)
+Latest version: (https://github.com/timlee/sonar-l10n-zh-tw/releases/latest)
 
-compatibility Matrix: 
+Compatibility Matrix: 
 
 ---
 
-SonarQube 繁體中文套件 (Traditional Chinese language pack)
+SonarQube 繁體中文套件 (Traditional Chinese Language Pack)
 
 相容列表如下(Compatibility List)：
 
