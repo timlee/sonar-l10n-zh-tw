@@ -8,19 +8,19 @@
     <version>18</version>
   </parent>
 
-  <groupId>org.sonarqube.l10n.zh_tw</groupId>
-  <artifactId>sonar-l10n-zh-tw-plugin</artifactId>
+  <groupId>org.sonarqube.l10n.zhtw</groupId>
+  <artifactId>sonar-l10n-zhtw-plugin</artifactId>
   <packaging>sonar-plugin</packaging>
-  <version>8.0-SNAPSHOT</version>
+  <version>1.0</version>
 
-  <name>L10n :: Traditional Chinese Pack</name>
-  <url>https://github.com/SonarQubeCommunity/sonar-l10n-zh-tw</url>
+  <name>L10n :: Traditional Chinese Language Pack</name>
+  <url>https://github.com/SonarQubeCommunity/sonar-l10n-zhtw</url>
   <inceptionYear>2019</inceptionYear>
-  <description>Language Pack for Traditional Chinese</description>
+  <description>SonarQube Traditional Chinese Language Pack (not compatible with the “Chinese Pack” which uses Simplified Chinese)</description>
 
   <organization>
-    <name>CodeHawk</name>
-    <url>http://www.codehawk.org</url>
+    <name>Tim Lee</name>
+    <url>https://github.com/SonarQubeCommunity/sonar-l10n-zhtw</url>
   </organization>
 
   <licenses>
@@ -32,15 +32,15 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:https://github.com/SonarQubeCommunity/sonar-l10n-zh-tw.git</connection>
-    <developerConnection>scm:git:https://github.com/SonarQubeCommunity/sonar-l10n-zh-tw.git</developerConnection>
-    <url>https://github.com/SonarQubeCommunity/sonar-l10n-zh-tw</url>
+    <connection>scm:git:https://github.com/SonarQubeCommunity/sonar-l10n-zhtw.git</connection>
+    <developerConnection>scm:git:https://github.com/SonarQubeCommunity/sonar-l10n-zhtw.git</developerConnection>
+    <url>https://github.com/SonarQubeCommunity/sonar-l10n-zhtw</url>
     <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
     <system>GitHub Issues</system>
-    <url>https://github.com/SonarQubeCommunity/sonar-l10n-zh-tw/issues</url>
+    <url>https://github.com/SonarQubeCommunity/sonar-l10n-zhtw/issues</url>
   </issueManagement>
 
   <properties>
@@ -93,10 +93,10 @@
 
   <developers>
     <developer>
-      <id>wtlee</id>
-      <name>wentinlee</name>
-      <organization>CodeHawk</organization>
-      <organizationUrl>http://www.codehawk.org</organizationUrl>
+      <id>timlee</id>
+      <name>Tim Lee</name>
+      <organization></organization>
+      <organizationUrl></organizationUrl>
     </developer>
   </developers>
 
@@ -111,7 +111,7 @@
         <configuration>
           <basePlugin>l10nen</basePlugin>
           <pluginName>Traditional Chinese Pack</pluginName>
-          <pluginDescription>Language pack for Traditional Chinese</pluginDescription>
+          <pluginDescription>Language Pack for Traditional Chinese</pluginDescription>
         </configuration>
       </plugin>
       
@@ -171,23 +171,6 @@
       						<ignore></ignore>
       					</action>
       				</pluginExecution>
-      				<pluginExecution>
-      					<pluginExecutionFilter>
-      						<groupId>
-      							com.mycila.maven-license-plugin
-      						</groupId>
-      						<artifactId>
-      							maven-license-plugin
-      						</artifactId>
-      						<versionRange>[1.9.0,)</versionRange>
-      						<goals>
-      							<goal>check</goal>
-      						</goals>
-      					</pluginExecutionFilter>
-      					<action>
-      						<ignore></ignore>
-      					</action>
-      				</pluginExecution>
       			</pluginExecutions>
       		</lifecycleMappingMetadata>
       	</configuration>
@@ -195,6 +178,15 @@
     </plugins>
     </pluginManagement>
   </build>
+
+<!--
+  <repositories>
+    <repository>
+	  <id>sonar</id>
+	  <url>https://repox.sonarsource.com/sonarsource</url>
+	</repository>
+  </repositories>
+-->
 
   <distributionManagement>
     <repository>

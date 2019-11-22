@@ -1,6 +1,6 @@
 /*
- * L10n :: Traditional Chinese Pack
- * Copyright (C) 2019 CodeHawk
+ * L10n :: Traditional Chinese Language Pack
+ * Copyright (C) 2019 Tim Lee
  * dev@sonar.codehaus.org
  *
  * This program is free software; you can redistribute it and/or
