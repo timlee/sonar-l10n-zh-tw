@@ -3,7 +3,7 @@ The Traditional Chinese Language Pack for SonarQube
 
 Author: Tim Lee <wentin.lee@gmail.com>
 
-Latest version: (https://github.com/SonarQubeCommunity/sonar-l10n-zhtw/releases/latest)
+Latest version: https://github.com/timlee/sonar-l10n-zh-tw/releases/latest
 
 Compatibility Matrix: 
 
