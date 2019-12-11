@@ -1,5 +1,5 @@
 /*
- * L10n :: Traditional Chinese Language Pack
+ * Traditional Chinese Language Pack
  * Copyright (C) 2019 Tim Lee
  * dev@sonar.codehaus.org
  *

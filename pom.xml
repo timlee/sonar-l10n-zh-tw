@@ -13,7 +13,7 @@
   <packaging>sonar-plugin</packaging>
   <version>1.0</version>
 
-  <name>L10n :: Traditional Chinese Language Pack</name>
+  <name>Traditional Chinese Language Pack</name>
   <url>https://github.com/SonarQubeCommunity/sonar-l10n-zhtw</url>
   <inceptionYear>2019</inceptionYear>
   <description>SonarQube Traditional Chinese Language Pack (not compatible with the “Chinese Pack” which uses Simplified Chinese)</description>
